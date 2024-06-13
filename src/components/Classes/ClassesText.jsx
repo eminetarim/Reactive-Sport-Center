@@ -16,7 +16,7 @@ const classInfo = {
     h1: "Why are your Group?",
     h2: "When comes Group Your Time",
     p: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has ",
-    imgSrc:group,
+    imgSrc: group,
   },
   solo: {
     h1: "Why are your Solo?",
@@ -37,10 +37,12 @@ const ClassesText = ({ activeClass }) => {
 
   return (
     <div id="feat-cont">
-      <h1 id="feat-h1">{h1}</h1>
-      <h2 id="feat-h2">{h2}</h2>
-      <p id="feat-p">{p}</p>
-      <img src={imgSrc} alt={activeClass} />
+      <div className="feat-cont-left">
+        <h1 id="feat-h1">{h1}</h1>
+        <h2 id="feat-h2">{h2}</h2>
+        <p id="feat-p">{p}</p>
+      </div>
+      <img className="feat-cont-right" src={imgSrc} alt={activeClass} />
     </div>
   );
 };

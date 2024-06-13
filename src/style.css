@@ -124,6 +124,19 @@ h1{
 .width-half{
   width: 50%;
 }
+.button-group{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+#feat-cont{
+  display: flex;
+}
+.feat-cont-left,.feat-cont-right{
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+}
 
 /* section-bmi */
 #section-bmi{
@@ -418,4 +431,13 @@ h1{
     display: flex;
     justify-content: space-between;
   }
+  #feat-cont{
+    display: block;
+  }
+  .feat-cont-left,.feat-cont-right{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
 }
